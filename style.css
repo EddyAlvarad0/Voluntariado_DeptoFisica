@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.card-img-top {
+    height: 50px; /* Ajusta la altura según lo que necesites */
+    object-fit: cover; /* Evita que la imagen se deforme */
+}
+
+.card {
+    width: 18rem;
+    min-height: 350px; /* Las cards serán al menos de 350px, pero pueden crecer si el contenido es mayor */
+}
+
+.custom-img {
+    width: 100%; /* O el tamaño que necesites */
+    height: auto; /* Mantener las proporciones */
+    object-fit: contain; /* Ajuste sin deformar la imagen */
+}

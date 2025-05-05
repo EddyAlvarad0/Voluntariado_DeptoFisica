@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento de Física - FIUSAC</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="icon" type="image/png" href="img/iconos/UsacLogo.png">
+
+    <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png" alt="Logo USAC" width="40" height="40" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="cargarPagina('inicio')">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="cargarPagina('fisica-basica')">Física Básica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="cargarPagina('fisica-1')">Física 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="cargarPagina('fisica-2')">Física 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="cargarPagina('fisica-3')">Física 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="cargarPagina('fisica-4')">Física 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <div id="contenido" class="text-center">
+            <h1 style="color: rgb(19, 19, 88); font-size: 40px; margin-bottom: 20px;">Bienvenido a la página de Física</h1>
+            <img src="https://fisica.ingenieria.usac.edu.gt/images/slider/image_07.jpg" alt="Ingeniería USAC" style="width: 400px; display: block; margin: 20px auto; border-radius: 10px;">
+            <p style="color: rgb(122, 121, 121); font-size: 20px; margin-top: 25px;">
+                Selecciona una categoría en el menú para ver más información.
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light p-4 mt-4">
+        <div class="container">
+            <h1 class="display-6">OTROS ENLACES</h1>
+            <div class="d-flex flex-wrap gap-3">
+                <a class="icon-link icon-link-hover link-success" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="http://fisica.usac.edu.gt/mcaf/" target="_blank">
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+                    Maestría en Física
+                </a>
+                <a class="icon-link icon-link-hover link-success" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="http://www.ingenieria.usac.edu.gt/" target="_blank">
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+                    Facultad de Ingeniería
+                </a>
+                <a class="icon-link icon-link-hover link-success" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="http://fisica.usac.edu.gt/" target="_blank">
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+                    Licenciatura en Física Aplicada
+                </a>
+                <a class="icon-link icon-link-hover link-success" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://epostgrado.ingenieria.usac.edu.gt/" target="_blank">
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+                    Escuela de Estudios de Postgrado
+                </a>
+                <a class="icon-link icon-link-hover link-success" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="http://www.usac.edu.gt/" target="_blank">
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+                    USAC
+                </a>
+                <a class="icon-link icon-link-hover link-success" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="http://saesap.ingenieria.usac.edu.gt/site/" target="_blank">
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+                    SAESAP
+                </a>
+                <a class="icon-link icon-link-hover link-success" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="http://www.ictp.it/" target="_blank">
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+                    ICTP
+                </a>
+                <a class="icon-link icon-link-hover link-success" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://fisica.ingenieria.usac.edu.gt/programas.html" target="_blank">
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+                    Programas de Semestres Anteriores
+                </a>
+                <a class="icon-link icon-link-hover link-success" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="http://mate.ingenieria.usac.edu.gt/olimpiada/index.php" target="_blank">
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+                    Olimpiadas Interuniversitarias
+                </a>
+            </div>
+            <div class="mt-4">
+                <p>Departamento de Física</p>
+                <p>Edificio T1, 2do Nivel, Ciudad Universitaria, Zona 12.</p>
+                <p>Teléfono: (+502) 2418 9117</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
